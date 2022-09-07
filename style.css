@@ -85,8 +85,8 @@ input[type="text"] {
 }
 
 .btn.active {
-  background-color: #ffffff;
-  color: #f69906;
+  /* background-color: #ffffff; */
+  color: white;
 }
 
 .btn-grey {
