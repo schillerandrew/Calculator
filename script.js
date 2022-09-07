@@ -62,3 +62,21 @@ const remove_active = () => {
     btn.classList.remove('active');
   })
 }
+
+const dayColors = [
+  '#f6b26b', // sun orange
+  '#000000', // mon black/white
+  '#e06666', // tues red
+  '#f1c232', // wed yellow
+  '#6d9eeb', // thurs blue
+  '#93c47d', // fri green
+  '#8e7cc3' // sat purple
+]
+const body = document.querySelector('body');
+const cal = document.querySelector('.cal');
+const or = document.querySelector('.or');
+const date = new Date();
+// body.style.backgroundColor = dayColors[date.getDay()];
+body.style.backgroundColor = dayColors[date.getDay()];
+cal.style.color = dayColors[date.getDay()];
+or.style.color = dayColors[date.getDay()];
