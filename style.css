@@ -7,17 +7,24 @@
 }
 
 body {
-  background-color: lightslategray; /* page background */
+  background-image: linear-gradient(rgba(255,255,255,1),rgba(255,255,255,0)); /* page background */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-size: 16px;
+}
+
+.calculator {
+  font-size: 100px;
+  display: flex;
+  flex-direction: row;
 }
 
 body,
 html {
   height: 100vh;
-  font-family: sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
 button {
@@ -31,11 +38,12 @@ input[type="text"] {
   width: 100%;
   color: #ededed; /* number display */
   border: 0px;
+  /* border-radius: 5px; */
   font-size: 4rem;
 }
 
 #main {
-  border: 2px solid lightgreen; /* calculator border */
+  border: 25px solid lightgreen; /* calculator border */
   border-radius: 50px;
   width: 100%;
   max-width: 280px;
@@ -71,7 +79,7 @@ input[type="text"] {
   width: 60px;
   height: 60px;
   color: #000000;
-  font-size: 20px;
+  font-size: 25px;
   transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
