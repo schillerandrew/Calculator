@@ -19,6 +19,8 @@ body {
   font-size: 100px;
   display: flex;
   flex-direction: row;
+  margin-bottom: -20px;
+  margin-top: -10px;
 }
 
 body,
@@ -117,4 +119,43 @@ input[type="text"] {
 
 .btn-operator:hover {
   background-color: #999999;
+}
+
+.color-btn {
+  float: left;
+  border: 10px solid;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin: 0px 7px;
+  background-color: transparent;
+}
+
+#red {
+  border-color: grey;
+  background-color: red;
+}
+
+#orange {
+  border-color: orange;
+}
+
+#yellow {
+  border-color: yellow;
+}
+
+#green {
+  border-color: green;
+}
+
+#blue {
+  border-color: blue;
+}
+
+#purple {
+  border-color: purple;
+}
+
+#white {
+  border-color: white;
 }
