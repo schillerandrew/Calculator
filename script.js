@@ -63,9 +63,22 @@ const remove_active = () => {
   })
 }
 
+const toggleMenu = () => {
+  let menu = document.getElementById("menu");
+  let menuButton = document.getElementById("menuButton");
+  if (menu.className === "menuOff") {
+    menu.className = "menuOn";
+    menuButton.value = '-';
+  }
+  else {
+    menu.className = "menuOff";
+    menuButton.value = '+';
+  }
+}
+
 const dayColors = [
   '#8C2500', // sun orange
-  '#999999', // mon black/white
+  '#696969', // mon black/white
   '#CC5C5C', // tues red
   '#CCAD00', // wed yellow
   '#186FC7', // thurs blue
@@ -115,8 +128,8 @@ const miscColors = [
 
 let i = 0;
 const body = document.querySelector('body');
-const cal = document.querySelector('.cal');
-const or = document.querySelector('.or');
+// const cal = document.querySelector('.cal');
+// const or = document.querySelector('.or');
 const main = document.querySelector('#main');
 const operators = document.querySelectorAll('.btn-operator');
 const operands = document.querySelectorAll('.btn-operand');
@@ -124,12 +137,12 @@ const misc = document.querySelectorAll('.btn-misc');
 const date = new Date();
 // body.style.backgroundColor = dayColors[date.getDay()];
 if (date.getDay() == 1) {
-  body.style.backgroundColor = '#000000';
+  body.style.backgroundColor = '#696969';
 } else {
   body.style.backgroundColor = dayColors[date.getDay()];
 }
-cal.style.color = dayColors[date.getDay()]; // "cal"
-or.style.color = dayColors[date.getDay()]; // "or"
+// cal.style.color = dayColors[date.getDay()]; // "cal"
+// or.style.color = dayColors[date.getDay()]; // "or"
 main.style.borderColor = borderColors[date.getDay()]; // calculator border
 console.log(operators);
 for (i = 0; i < operators.length; i++) {
