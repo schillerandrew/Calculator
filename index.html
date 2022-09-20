@@ -14,18 +14,25 @@
 <body>
   <div class="calculator">
     <!-- "calculator" header -->
-    <div class="cal"><p>cal</p></div>
-    <div><p>culat</p></div>
+    <div class="cal">
+      <p>cal</p>
+    </div>
+    <div>
+      <p>culat</p>
+    </div>
     <div class="or">or</div>
   </div> <!-- "calculator" header -->
-  <div>
-    <button class="color-btn" id="red"></button>
-    <button class="color-btn" id="orange"></button>
-    <button class="color-btn" id="yellow"></button>
-    <button class="color-btn" id="green"></button>
-    <button class="color-btn" id="blue"></button>
-    <button class="color-btn" id="purple"></button>
-    <button class="color-btn" id="white"></button>
+  <div id="menuDiv">
+    <input type="button" id="menuButton" onclick="toggleMenu()" value="+"></input>
+    <div id="menu" class="menuOff">
+      <button class="color-btn" id="red"></button>
+      <button class="color-btn" id="orange"></button>
+      <button class="color-btn" id="yellow"></button>
+      <button class="color-btn" id="green"></button>
+      <button class="color-btn" id="blue"></button>
+      <button class="color-btn" id="purple"></button>
+      <button class="color-btn" id="white"></button>
+    </div>
   </div>
   <main id="main">
     <form id="calc_form">
