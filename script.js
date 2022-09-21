@@ -68,7 +68,7 @@ const toggleMenu = () => {
   let menuButton = document.getElementById("menuButton");
   if (menu.className === "menuOff") {
     menu.className = "menuOn";
-    menuButton.value = '-';
+    menuButton.value = '−';
   }
   else {
     menu.className = "menuOff";
