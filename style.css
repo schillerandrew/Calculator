@@ -39,6 +39,29 @@ body {
   cursor: pointer;
 }
 
+label {
+  font-size: 100px;
+  border-radius: 100%;
+  transition: transform 1s, color 2s;
+}
+
+/* label:checked {
+  color: red;
+  font-size: 200px;
+} */
+
+#menuButton:checked + label {
+  transform: rotate(675deg);
+  color: white;
+}
+
+#menuButton:checked + .menuOn {
+  /* visibility: visible; */
+  /* background: white; */
+  /* transition: visibility 1s; */
+  visibility: visible;
+}
+
 #menu {
   /* justify-content: space-evenly; */
   /* background: grey; */
@@ -51,18 +74,24 @@ body {
   /* justify-content: start; */
   border: 2px solid black;
   border-radius: 20px;
+  /* transition: visibility 1s; */
 }
 
 .menuOff {
+  /* display: none; */
+  visibility: hidden;
+  /* transition: visibility 1s; */
+}
+
+input {
   display: none;
 }
 
 .menuOn {
-  /* justify-content: space-evenly; */
-  /* display: inline; */
-  /* position: absolute; */
-  /* align-items: center; */
-  /* z-index: 50; */
+  /* display: block; */
+  /* visibility: visible; */
+  /* visibility: visible;
+  transition: visibility 2s; */
 }
 
 .color-btn {
