@@ -65,14 +65,14 @@ const remove_active = () => {
 
 const toggleMenu = () => {
   let menu = document.getElementById("menu");
-  let menuButton = document.getElementById("menuButton");
+  // let menuButton = document.getElementById("menuButton");
   if (menu.className === "menuOff") {
     menu.className = "menuOn";
-    menuButton.value = '−';
+    // menuButton.value = 'x';
   }
   else {
     menu.className = "menuOff";
-    menuButton.value = '+';
+    // menuButton.value = '+';
   }
 }
 
